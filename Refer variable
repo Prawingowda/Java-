@@ -1,0 +1,8 @@
+public class A{
+			public static void main(String[] args) {
+			A a1 = null;//obejct is not created,but reference variable is created
+			A a2 = new A();//storing object address inside a2
+			System.out.println(a1);
+			System.out.println(a2);
+		}
+	}
