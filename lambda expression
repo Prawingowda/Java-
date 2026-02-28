@@ -1,0 +1,41 @@
+example :1
+package p1;
+@FunctionalInterface
+public interface A {
+public void test1();
+}
+
+a.java
+
+package p1;
+
+public class B {
+	public static void main(String[] args) {
+		A a1 =()->{
+			System.out.println(200);
+		};
+		a1.test1();
+	}
+}
+
+b.java
+
+example :2
+package p1;
+@FunctionalInterface
+public interface A {
+public void test1(int x,String y);
+}
+a.java
+
+package p1;
+
+public class B {
+	    	    public static void main(String[] args) {
+	    	        A a1 = (int x, String y) -> {
+	    	            System.out.println(x);
+	    	            System.out.println(y);
+	    	        };
+	    	        a1.test1(500, "mike");
+	    	    }
+	    	}
