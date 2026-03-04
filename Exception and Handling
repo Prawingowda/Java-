@@ -1,0 +1,70 @@
+// Arithmetic Exception
+//Exmaple :1
+package p1;
+public class A{
+	public static void main(String[] args) {
+		try {
+			int x = 10;
+			int y = 0;
+			int z = x/y;
+			System.out.println(z);
+		} catch (ArithmeticException e) {
+			e.printStackTrace();
+		}
+		System.out.println("i love java ");
+	}
+}
+	output 	///Exception in thread "main" java .lang ArithmeticException by zero at app_java_1/p1.A main(A.java:7)
+    
+    Exception handling:
+    ex:2
+    package p1;
+    public static void main(String[]args){
+        try{
+            int x = 10;
+            int y = 0;
+            int z = x/y;
+            System.out.println(z);
+        }catch (Exception e){
+            e.printStackTrace();
+
+        }
+        System.out.println("welcome");
+    }
+    }
+
+
+    NullpointerException:
+    example :3
+    package p1;
+public class A{
+	public static void main(String[] args) {
+		try {
+			A a1 = null;
+			System.out.println(a1.x);
+		}catch (NullPointerException e ) {
+			e.printStackTrace();
+		}
+	System.out.println("i love java ");
+	}
+}
+	output :welcome
+
+    example 4
+
+    package p1;
+public class A{
+        static int  x = 10;
+        public static void main(String[]args){
+            try{
+                A a1 = null;
+                System.out.println(a1.x);
+            }catch(NullPointerException e) {
+            e.printStackTrace();
+        }
+        System.out.println("welcome");
+}
+}
+		output 
+        10
+        welcome
